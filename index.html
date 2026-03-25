@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davao City - Life is Here</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">🌴 Davao City</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#attractions">Attractions</a></li>
+      <li><a href="#food">Food & Culture</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Davao City</h1>
+      <p>Life is Here – Discover nature, culture, and adventure.</p>
+      <a href="#about" class="btn">Explore More</a>
+    </div>
+    <img src="davao.jpg" alt="Davao City Hall" class="hero-img">
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Davao</h2>
+    <img src="skyline.jpg" alt="Davao City Skyline" class="section-img">
+    <p>Davao City is the crown jewel of Mindanao, known for its safety, cleanliness, and vibrant culture. It is home to Mount Apo, the highest peak in the Philippines.</p>
+  </section>
+
+  <!-- Attractions Section -->
+  <section id="attractions">
+    <h2>Top Attractions</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="eagle.jpg" alt="Philippine Eagle">
+        <p>Philippine Eagle Center</p>
+      </div>
+      <div class="card">
+        <img src="apo.jpg" alt="Mount Apo">
+        <p>Mount Apo</p>
+      </div>
+      <div class="card">
+        <img src="samal.jpg" alt="Samal Island">
+        <p>Samal Island</p>
+      </div>
+      <div class="card">
+        <img src="park.jpg" alt="Crocodile Park">
+        <p>Crocodile Park</p>
+      </div>
+      <div class="card">
+        <img src="market.jpg" alt="Roxas Night Market">
+        <p>Roxas Night Market</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food & Culture Section -->
+  <section id="food">
+    <h2>Food & Culture</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="durian.jpg" alt="Durian Fruit">
+        <p>Durian</p>
+      </div>
+      <div class="card">
+        <img src="pomelo.jpg" alt="Pomelo Fruit">
+        <p>Pomelo</p>
+      </div>
+      <div class="card">
+        <img src="chocolate.png" alt="Malagos Chocolate">
+        <p>Malagos Chocolate</p>
+      </div>
+      <div class="card">
+        <img src="festival.jpg" alt="Kadayawan Festival">
+        <p>Kadayawan Festival</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Davao City Promotional Website</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      if (navLinks.style.display === "flex") {
+        navLinks.style.display = "none";
+      } else {
+        navLinks.style.display = "flex";
+        navLinks.style.flexDirection = "column";
+      }
+    }
+  </script>
+</body>
+</html>
